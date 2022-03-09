@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+.wrapper {
+  width: 440px;
+  height: 100vh;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+
+.wrapper .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #2E69CD;
+  position: absolute;
+  left: 7%;
+  top: -50px;
+}
+
+.wrapper .circle::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #D17E20;
+  position: absolute;
+  top: 260px;
+  left: 225px;
+}
+
+.wrapper .card {
+  width: 200px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.123);
+  box-shadow: 0 4px 30px black;
+  backdrop-filter: blur(5px);
+}
+
+.wrapper .card form input {
+  width: 200px;
+  padding: 10px  8px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.123);
+  box-shadow: 0 4px 30px black;
+  outline: none;
+  border: none;
+  border-radius: 2.5px;
+  color: #fff;
+}
+
+.wrapper .card form textarea {
+  width: 200px;
+  height: 40px;
+  padding: 10px 8px;
+  background: rgba(255, 255, 255, 0.123);
+  outline: none;
+  border: none;
+  border-radius: 2.5px;
+  color: #fff;
+}
+
+.wrapper .card form h1 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.wrapper .card form .text {
+  margin: 20px 0 5px;
+}
+
+.wrapper .card form button {
+  margin: 20px 0 10px;
+  width: 200px;
+  padding: 10px;
+  font-weight: 900;
+  border: none;
+  border-radius: 2.5px;
+}
+
+.wrapper .card form .cnt {
+  display: flex;
+}
+
+.wrapper .card form .cnt .ser {
+  width: 50%;
+}
