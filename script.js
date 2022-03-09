@@ -8,10 +8,10 @@ document.querySelector('form').addEventListener('submit',(e)=>{
     const phone = document.querySelector("[name=phone]").value;
     const msg = document.querySelector("[name=msg]").value;
 
-    if(name !='' && phone !== '' && msg !== '')
+    if(name !=='' && phone !== '' && msg !== '')
         submit({
-            token: "1950650008:AAEjOHUm3PlgbGvzZFJxR5Am_c4o_TH8T6U",
-            chatId: "1950650008",
+            token: "5104059461:AAE9gSrdGMopN1QyrMYHOm6irD3ZYOnQp7k",
+            chatId: "1637157234",
             data: `Ismi: ${name} %0ATelefon raqami: ${phone}%0A Xabar: ${msg}`
         })
 })
